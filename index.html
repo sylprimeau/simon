@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="simon.css">
+	<link href="https://fonts.googleapis.com/css?family=Coda:800" rel="stylesheet">
+	<title>Syl Primeau - Simon Memory Game</title>
+</head>
+
+<body>
+	<div id="shell">
+		<div id="green" class="press-buttons"></div>
+		<div id="red" class="press-buttons"></div>
+		<div id="yellow" class="press-buttons"></div>
+		<div id="blue" class="press-buttons"></div>
+		<div id="panel">
+			<div id="logo" class="noselect">Simon</div>
+			<div id="count-display" class="noselect">--</div>
+			<div id="count-label" class="labels noselect">COUNT</div>
+			<div id="start-button" class="buttons"></div>
+			<div id="start-label" class="labels noselect">START</div>
+			<div id="strict-lamp"></div>
+			<div id="strict-button" class="buttons"></div>
+			<div id="strict-label" class="labels noselect">STRICT</div>
+			<div id="off-label" class="labels noselect">OFF</div>
+			<div id="power-well">
+				<div id="power-switch"></div>
+			</div>
+			<div id="on-label" class="labels noselect">ON</div>
+		</div>
+	</div>
+	<div id="instructions">
+		<p>If you make a mistake in normal mode, the pattern will be repeated until you get it right.
+			<p>If you make a mistake in strict mode, the game will start over from the beginning with a new pattern.
+	</div>
+	<script src="simon.js"></script>
+</body>
+
+</html>

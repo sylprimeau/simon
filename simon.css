@@ -1,0 +1,252 @@
+.noselect {
+  /* add "noselect" class to items you want to prevent selection on */
+  /* prevents text from being selected on buttons */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+
+body {
+  background-color: #bbbb99;
+}
+
+#shell {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  margin: auto;
+  position: relative;
+  top: 10px;
+  box-shadow: inset 5px 4px 15px 0px #333333, inset -5px 4px 20px 0px #333333, inset 5px -4px 20px 0px #333333;
+}
+
+.press-buttons {
+  width: 44%;
+  height: 44%;
+  border: 10px solid black;
+}
+
+#panel {
+  background: silver;
+  background: -webkit-linear-gradient(250deg, grey 5%, white 30%, grey 90%);
+  background: linear-gradient(200deg, grey 5%, white 30%, grey 90%);
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 22.5%;
+  left: 22.5%;
+  border: 10px solid black;
+  border-radius: 50%;
+  font-size: 10px;
+  box-shadow: inset 0px 0px 3px 2px gray;
+}
+
+#green {
+  border-top-left-radius: 100%;
+  background-color: #009900;
+  box-shadow: inset 0px 0px 70px 0px #595959;
+}
+
+/*
+#green:active {
+  background: radial-gradient(#ccffcc, #77ff77, #33ff33, #00ff00);
+}
+*/
+
+#red {
+  border-top-right-radius: 100%;
+  background-color: #aa0000;
+  box-shadow: inset 0px 0px 70px 0px #595959;
+}
+
+/*
+#red:active {
+  background: radial-gradient(#ff8888, #ff5555, #ff2222, #ff0000);
+}
+*/
+
+#yellow {
+  border-bottom-left-radius: 100%;
+  background-color: #bbbb00;
+  box-shadow: inset 0px 0px 70px 0px #595959;
+}
+
+/*
+#yellow:active {
+  background: radial-gradient(#ffffcc, #ffff66, #ffff33, #ffff00);
+}
+*/
+
+#blue {
+  border-bottom-right-radius: 100%;
+  background-color: #0000cc;
+  box-shadow: inset 0px 0px 70px 0px #595959;
+}
+
+/*
+#blue:active {
+  background: radial-gradient(#aaaaff, #7777ff, #4444ff, #0000ff);
+}
+*/
+
+#logo {
+	font-family: 'Coda', cursive;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  font-size: 5em;
+  font-weight: bold;
+  position: absolute;
+  top: 15%;
+  left: 16%;
+  cursor: default;
+}
+
+@font-face {
+  font-family: digital;
+  src: url(http://www.superconvert.com/codeplaypen/FCCcalculator/digital-monoitalic.ttf);
+}
+
+#count-display {
+  font-family: digital;
+  height: 22%;
+  width: 32%;
+  background-color: #1a0000;
+  text-align: center;
+  line-height: 110%;
+  color: #4d0000;
+  font-size: 5em;
+  position: absolute;
+  top: 43%;
+  left: 10%;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 4px 1px black;
+  cursor: default;
+}
+
+.buttons {
+  height: 10%;
+  width: 10%;
+  border-radius: 50%;
+  border: 1px solid #777777;
+  box-shadow: 1px 1px 3px 1px #777777, inset -1px -1px 2px 1px #222222;
+  position: absolute;
+  cursor: pointer;
+}
+
+.buttons:active {
+  box-shadow: 0.5px 0.5px 3px 1px #777777, inset -1px -1px 2px 1px #222222;
+  border: 0;
+}
+
+#start-button {
+  background-color: #ff0000;
+  left: 52%;
+  top: 50%;
+}
+
+#strict-button {
+  background-color: #dddd00;
+  left: 72%;
+  top: 50%;
+}
+
+#strict-lamp {
+  background-color: #770000;
+  width: 5%;
+  height: 5%;
+  border-radius: 50%;
+  position: absolute;
+  top: 43%;
+  left: 74.5%;
+  box-shadow: inset 0 0 6px 0px, 1px 1px 1px 0px grey;
+}
+
+#power-well {
+  background-color: #222222;
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  left: 40%;
+  top: 80%;
+}
+
+#power-switch {
+  width: 45%;
+  height: 85%;
+  position: absolute;
+  left: 4%;
+  top: 10%;
+  border-radius: 5%;
+  background: -webkit-linear-gradient(left, #4444dd 80%, #0000aa 20%);
+  background-size: 3px;
+  cursor: pointer;
+}
+
+.labels {
+  position: absolute;
+  font-size: 1.2em;
+  cursor: default;
+}
+
+#count-label {
+  top: 68%;
+  left: 18%;
+}
+
+#start-label {
+  top: 68%;
+  left: 50%;
+}
+
+#strict-label {
+  top: 68%;
+  left: 70%;
+}
+
+#off-label {
+  top: 83%;
+  left: 28%;
+}
+
+#on-label {
+  top: 83%;
+  left: 62%;
+}
+
+#instructions {
+  width: 70%;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  font-size: 120%;
+}
